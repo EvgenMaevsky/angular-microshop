@@ -1,0 +1,126 @@
+/* Master Styles */
+body{
+    background-image: url('app/img/cat_bg.jpg');
+}
+/*HEADER*/
+#header{
+    background: #fff;
+    border: 1px solid grey;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 10px 5px dimgrey;
+    -moz-box-shadow: 2px 2px 10px 5px dimgrey;
+    box-shadow: 2px 2px 10px 5px dimgrey;
+    margin-top: -15px;
+}
+#header #logo{
+    margin: 10px;
+    display: inline-block;
+}
+#header h1{
+    display: inline-block;
+    margin: 20px;
+}
+/*ПРОДУКТ*/
+.itemContainer{
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin: 20px;
+    width: 200px;
+    height: 300px;
+    text-align: center;
+    border: 1px solid grey;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 10px 5px dimgrey;
+    -moz-box-shadow: 2px 2px 10px 5px dimgrey;
+    box-shadow: 2px 2px 10px 5px dimgrey;
+}
+.itemContainer>p{
+    position: absolute;
+    display: inline-block;
+    top: 190px;
+    text-align: center;
+}
+.itemContainer>span{
+    position: absolute;
+    display: inline-block;
+    top: 230px;
+    text-align: center;
+}
+span.gotIt{
+    color: red;
+    font-weight: bold;
+}
+
+.itemImg{
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    left: 15px;
+    top: 15px;
+    border: 1px solid black;
+    border-radius: 50%;
+
+}
+.itemContainer > button{
+    position: absolute;
+    top: 250px;
+    left:25%;
+    width: 100px;
+    border-radius: 5px;
+}
+
+/*КОРЗИНА*/
+.cart{
+    position: fixed;
+    width: 30%;
+    display: block;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 2px 4px black;
+    -moz-box-shadow: 2px 2px 2px 4px black;
+    box-shadow: 2px 2px 10px 5px dimgrey;
+    background: #FFD52B;
+    right:-20px;
+    bottom: 95%;
+    padding: 10px;
+    z-index:2;
+}
+.cart:hover{
+    bottom: auto;
+    width: 60%;
+    top: -20px;
+}
+.cart img{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    width: 20px;
+    height: 20px;
+}
+.cart h3{
+    display: inline-block;
+    text-align: left;
+    margin-left: 25px;
+    margin-top:0;
+    margin-bottom: 0;
+}
+.cart ul{
+    list-style: none;
+}
+.cart li{
+    position: relative;
+    display:block;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.cart li:nth-child(odd){
+    background-color: rgba(192,192,192,0.3);
+}
+.cart input{
+    position: absolute;
+    right: 10px;
+    width: 20%;
+    text-align: center;
+    border-radius: 5px;
+}

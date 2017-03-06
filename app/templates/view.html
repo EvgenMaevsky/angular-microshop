@@ -1,0 +1,19 @@
+<div class="cart"> <!--корзина-->
+    <ul>
+        <li *ngFor='let s of cart;let i=index'>
+            {{i+1}}. {{s.name}}. {{s.desc}}
+            <input type="button" value="Delete" (click)="deleteItem(s)" />
+        </li>
+    </ul>
+
+    <img src="app/img/shoping-cart.png" alt="shoping-cart"><h3>You Want To Buy: {{countItems}} item(s)</h3>
+</div>
+<!--продукт-->
+<div *ngFor='let n of items;let i=index' >
+    <div class="itemContainer" [ngStyle]="n.style">
+        <img [src]="n.url" class="itemImg"/>
+        <p>{{n.desc}}</p>
+        <span>{{n.name}} <span class="">{{n.add}}</span></span>
+        <button  (click)="addLocal(n)">Add</button>
+    </div>
+</div>
